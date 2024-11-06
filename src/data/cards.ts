@@ -14,7 +14,7 @@ export const commonCards = [
   { id: 'c12', text: "Dans l'isoloir je vais mettre _____ dans l'enveloppe et 'pouf' dans l'urne", type: 'common' },
   { id: 'c13', text: "a l'échographie, je voyais déjà _____ de manière nette sur l'écran, j'en avais la larme a l'oeil", type: 'common' },
   { id: 'c14', text: "Je voudrais clarifier quelque chose, _____, j'y suis pour rien", type: 'common' },
-  { id: 'c15', text: "Fait preuv de de charité, donne donc _____ au vieux monsieur", type: 'common' },
+  { id: 'c15', text: "Fait preuve de charité, donne donc _____ au vieux monsieur", type: 'common' },
   { id: 'c16', text: "Avec _____, je vais briller en société", type: 'common' },
   { id: 'c17', text: "_____, c'est très important lors de ta première semaine", type: 'common' },
   { id: 'c18', text: "Asterix et Obelix et _____", type: 'common' },
