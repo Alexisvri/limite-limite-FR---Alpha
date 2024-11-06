@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Card, PlayedCardSet, Player } from '../types';
 import { ThumbsUp, Crown } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -20,6 +20,12 @@ const VotingPhase: React.FC<VotingPhaseProps> = ({
   votingPlayer,
   votes
 }) => {
+  // Randomize the order of played sets when component mounts or when sets change
+  const randomizedSets = useMemo(() => {
+    if (players.length <= 2) return playedSets;
+    return [...playedSets].sort(() => Math.random() - 0.5);
+  }, [playedSets, players.length]);
+
   useEffect(() => {
     const audio = new Audio('/sound/vote screen.wav');
     audio.play().catch(error => {
@@ -56,7 +62,7 @@ const VotingPhase: React.FC<VotingPhaseProps> = ({
       </div>
       
       <div className="grid grid-cols-1 gap-4">
-        {playedSets.map((playedSet) => {
+        {randomizedSets.map((playedSet) => {
           const voteCount = getVoteCount(playedSet.playerId);
           const canVote = !hasVoted(playedSet.playerId);
           
