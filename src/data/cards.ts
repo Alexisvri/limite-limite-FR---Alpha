@@ -134,7 +134,7 @@ export const commonCards = [
   { id: 'c129', text: "_____ incombe aux hommes, mais _____ ça reste le pré carré des femmes", type: 'common' },
   { id: 'c130', text: "_____ pour mon voisin de droite, _____ pour mon voisin de gauche", type: 'common' },
   { id: 'c131', text: "_____ et _____ j'appelle ça le choix du roi", type: 'common' },
-  { id: 'c132', text: "L'année dernière en queqlues mots ? _____ et _____", type: 'common' },
+  { id: 'c132', text: "L'année dernière en quelques mots ? _____ et _____", type: 'common' },
   { id: 'c133', text: "utiliser _____ pour _____ ça fait des miracles", type: 'common' },
   
   
